@@ -1,8 +1,8 @@
+
 import React,{useState} from 'react'
 
-import {PointLoader} from '../Loaders/pointLoader';
 
-function Loader4() {
+export function FileLoader() {
   const [loading, setLoading] = useState(false);
     const [quote, setQuote] = useState({});
   
@@ -18,8 +18,10 @@ function Loader4() {
     return (
       <div className="container">
         {loading ? (
-          <div className="container">
-            <PointLoader />
+          <div className="container laptopPos">
+            <div><i class="fas fa-desktop fa-5x"></i></div>
+            <div className='file'><i class="fas fa-stream fa-5x"></i></div>
+            <div><i class="fas fa-desktop fa-5x"></i></div>
           </div>
         ) : (
           <div className="main-content">
@@ -46,5 +48,3 @@ function Loader4() {
       </div>
     )
 }
-
-export default Loader4

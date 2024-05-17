@@ -9,6 +9,7 @@ import CircleLoader from "./Components/circleLoader";
 import Loader2 from "./Components/loader2";
 import Loader3 from "./Components/loader3";
 import Loader4 from "./Components/loader4";
+import { FileLoader } from "./Components/fileLoader";
 const App = () => {
   return (
     <div className="container">
@@ -32,7 +33,7 @@ const App = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/loader3">loader3</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="/fileL">File Loader</a></li>
                   <li><hr class="dropdown-divider"/></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -57,6 +58,8 @@ const App = () => {
           <Route path="/loader3" element={<Loader3/>}>
           </Route>
           <Route path="/loader4" element={<Loader4/>}>
+          </Route>
+          <Route path="/fileL" element={<FileLoader/>}>
           </Route>
         </Routes>
       </Router>
