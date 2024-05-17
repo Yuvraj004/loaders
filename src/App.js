@@ -8,6 +8,7 @@ import {
 import CircleLoader from "./Components/circleLoader";
 import Loader2 from "./Components/loader2";
 import Loader3 from "./Components/loader3";
+import Loader4 from "./Components/loader4";
 const App = () => {
   return (
     <div className="container">
@@ -37,7 +38,7 @@ const App = () => {
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link " href="/loader4">Loader 4</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -54,6 +55,8 @@ const App = () => {
           <Route path="/loader2" element={<Loader2/>}>
           </Route>
           <Route path="/loader3" element={<Loader3/>}>
+          </Route>
+          <Route path="/loader4" element={<Loader4/>}>
           </Route>
         </Routes>
       </Router>

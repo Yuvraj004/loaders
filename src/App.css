@@ -62,3 +62,33 @@
       transform: rotate(360deg);
   }
 }
+
+/* Point Loader */
+.pointloader{
+  width: 100%;
+  height: 500vh;
+  border:solid 2px #282c34;
+}
+.dot{
+  border-radius: 50%;
+  background-color: #3d5af1;
+  width: 50px;
+  height: 50px;
+  border-color:ridge 1px aliceblue;
+  animation: move 1.2s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0) translateY(50%); /* Start at center vertically */
+    }
+    25%{
+      transform: translateX(50vw) translateY(40vh); /* Move diagonally */
+    }
+    50%{
+      transform: translateX(60vw) translateY(40vh); /* Move diagonally */
+    }
+    100% {
+      transform: translateX(-50vw) translateY(40vh); /* Move back diagonally */  
+    }
+  
+}
